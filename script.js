@@ -1,12 +1,12 @@
 (function(t,r,a,q){t[q]=t[q]||[];t[q].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=r.getElementsByTagName(a)[0],
 j=r.createElement(a);j.async=true;j.src='https://track.testing.traq.ch/traq.js';
-f.parentNode.insertBefore(j,f);})(window,document,'script','traqLayer');
+f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer');
 
-window.traqLayer = window.traqLayer || [];
+window.dataLayer = window.dataLayer || [];
 
 function trackViewItem() {
-  window.traqLayer.push({
+  window.dataLayer.push({
     event: 'view_item',
     ecommerce: {
       currency: 'USD',
@@ -38,7 +38,7 @@ function trackViewItem() {
 }
 
 function trackAddToCart() {
-  window.traqLayer.push({
+  window.dataLayer.push({
     event: 'add_to_cart',
     ecommerce: {
       currency: 'USD',
@@ -70,7 +70,7 @@ function trackAddToCart() {
 }
 
 function trackPurchase() {
-  window.traqLayer.push({
+  window.dataLayer.push({
     event: 'add_to_cart',
     ecommerce: {
       transaction_id: 'T_12345',
